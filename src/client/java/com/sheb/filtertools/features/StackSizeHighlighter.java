@@ -1,4 +1,4 @@
-package com.sheb.filtertools;
+package com.sheb.filtertools.features;
 
 import com.sheb.filtertools.config.FilterToolsConfig;
 import net.minecraft.client.gui.DrawContext;
