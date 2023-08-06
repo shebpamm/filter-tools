@@ -1,7 +1,7 @@
 package com.sheb.filtertools.mixin.client;
 
-import com.sheb.filtertools.features.StackDuplicateHighlighter;
-import com.sheb.filtertools.features.StackSizeHighlighter;
+import com.sheb.filtertools.highlight.StackDuplicateHighlighter;
+import com.sheb.filtertools.highlight.StackSizeHighlighter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.GenericContainerScreen;

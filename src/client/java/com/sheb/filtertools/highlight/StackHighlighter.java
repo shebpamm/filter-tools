@@ -1,4 +1,4 @@
-package com.sheb.filtertools.features;
+package com.sheb.filtertools.highlight;
 
 import com.sheb.filtertools.config.FilterToolsConfig;
 import fi.dy.masa.malilib.gui.interfaces.IGuiIcon;

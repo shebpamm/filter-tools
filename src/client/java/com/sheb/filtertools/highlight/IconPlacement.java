@@ -1,4 +1,4 @@
-package com.sheb.filtertools.features;
+package com.sheb.filtertools.highlight;
 
 public enum IconPlacement {
     LEFT_TOP(0, 0),
