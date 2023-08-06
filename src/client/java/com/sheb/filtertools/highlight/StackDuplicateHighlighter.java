@@ -13,7 +13,7 @@ public class StackDuplicateHighlighter extends StackHighlighter{
 
     private boolean slotIsDuplicated() {
         ItemStack stack = this.slot.getStack();
-        return this.slot.inventory.count(stack.getItem()) > stack.getMaxCount();
+        return this.slot.inventory.count(stack.getItem()) > stack.getCount();
     }
     @Override
     public boolean needsAnnotation() {
