@@ -1,6 +1,6 @@
 package com.sheb.filtertools.compat;
 
-import com.sheb.filtertools.FilterToolsConfigGui;
+import com.sheb.filtertools.config.FilterToolsConfigGui;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 public class ModMenuImpl implements ModMenuApi

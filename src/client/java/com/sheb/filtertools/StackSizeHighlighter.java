@@ -1,5 +1,6 @@
 package com.sheb.filtertools;
 
+import com.sheb.filtertools.config.FilterToolsConfig;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.screen.slot.Slot;

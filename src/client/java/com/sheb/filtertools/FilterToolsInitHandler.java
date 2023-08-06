@@ -1,5 +1,8 @@
 package com.sheb.filtertools;
 
+import com.sheb.filtertools.config.FilterToolsConfig;
+import com.sheb.filtertools.config.FilterToolsConfigGui;
+import com.sheb.filtertools.config.FilterToolsInputHandler;
 import fi.dy.masa.malilib.config.ConfigManager;
 import fi.dy.masa.malilib.event.InputEventHandler;
 import fi.dy.masa.malilib.gui.GuiBase;

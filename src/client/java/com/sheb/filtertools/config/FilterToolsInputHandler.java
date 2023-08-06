@@ -1,5 +1,6 @@
-package com.sheb.filtertools;
+package com.sheb.filtertools.config;
 
+import com.sheb.filtertools.Loader;
 import fi.dy.masa.malilib.hotkeys.IKeybindManager;
 import fi.dy.masa.malilib.hotkeys.IKeybindProvider;
 
