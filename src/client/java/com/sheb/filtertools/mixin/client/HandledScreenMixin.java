@@ -1,5 +1,6 @@
 package com.sheb.filtertools.mixin.client;
 
+import com.sheb.filtertools.features.StackDuplicateHighlighter;
 import com.sheb.filtertools.features.StackSizeHighlighter;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -17,12 +18,13 @@ abstract class HandledScreenMixin extends Screen {
     protected HandledScreenMixin(Text titleIn) { super(titleIn); }
 
     @Inject(method = "drawSlot(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/screen/slot/Slot;)V",
-            at = @At(value = "HEAD"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/DrawContext;drawItemInSlot(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/item/ItemStack;IILjava/lang/String;)V"))
     public void drawSlot(DrawContext context, Slot slot, CallbackInfo info) {
         // Only bother if we're dealing with a Generic Container, e.g. Chests or Barrels.
         if (((HandledScreen)(Object)this) instanceof GenericContainerScreen) {
-            if(slot.hasStack() && slot.getStack().getMaxCount() != 64) {
-                StackSizeHighlighter.renderItemWarning(context, slot);
+            if(slot.hasStack()) {
+                new StackSizeHighlighter(context, slot).annotateSlot();
+                new StackDuplicateHighlighter(context, slot).annotateSlot();
             }
         }
     }

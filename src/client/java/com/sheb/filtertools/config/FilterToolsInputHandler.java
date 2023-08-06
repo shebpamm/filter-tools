@@ -1,6 +1,7 @@
 package com.sheb.filtertools.config;
 
 import com.sheb.filtertools.Loader;
+import fi.dy.masa.malilib.hotkeys.IHotkey;
 import fi.dy.masa.malilib.hotkeys.IKeybindManager;
 import fi.dy.masa.malilib.hotkeys.IKeybindProvider;
 
@@ -13,8 +14,9 @@ public class FilterToolsInputHandler implements IKeybindProvider {
 
     @Override
     public void addKeysToMap(IKeybindManager manager) {
-        manager.addKeybindToMap(FilterToolsConfig.Generic.STACK_SIZE_WARNING.getKeybind());
-        manager.addKeybindToMap(FilterToolsConfig.Generic.OPEN_CONFIG_GUI.getKeybind());
+        for (IHotkey hotkey: FilterToolsConfig.Generic.HOTKEYS) {
+            manager.addKeybindToMap(hotkey.getKeybind());
+        }
     }
 
     @Override
