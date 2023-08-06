@@ -5,6 +5,7 @@ import com.google.gson.JsonObject;
 import fi.dy.masa.malilib.config.ConfigUtils;
 import fi.dy.masa.malilib.config.IConfigHandler;
 import fi.dy.masa.malilib.config.IConfigValue;
+import fi.dy.masa.malilib.config.options.ConfigBoolean;
 import fi.dy.masa.malilib.config.options.ConfigBooleanHotkeyed;
 import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.options.ConfigHotkey;
@@ -23,11 +24,12 @@ public class FilterToolsConfig implements IConfigHandler {
         public static final ConfigHotkey OPEN_CONFIG_GUI = new ConfigHotkey("openConfigGui", "F,C", "Open the in-game config GUI");
         public static final ConfigBooleanHotkeyed STACK_SIZE_WARNING = new ConfigBooleanHotkeyed("stackSizeWarning", false, "", "Highlight items that don't stack to 64");
         public static final ConfigBooleanHotkeyed STACK_DUPLICATE_WARNING = new ConfigBooleanHotkeyed("stackDuplicateWarning", false, "", "Highlight items that appear twice or more in slots");
-
+        public static ConfigBoolean IGNORE_NAMED_ITEMS = new ConfigBoolean("ignoreNamedItems", true, "Ignore highlighting items that have been renamed, most likely filter items.");
         public static final ImmutableList<IConfigValue> OPTIONS = ImmutableList.of(
                 OPEN_CONFIG_GUI,
                 STACK_SIZE_WARNING,
-                STACK_DUPLICATE_WARNING
+                STACK_DUPLICATE_WARNING,
+                IGNORE_NAMED_ITEMS
         );
 
         public static final ImmutableList<IHotkey> HOTKEYS = ImmutableList.of(
