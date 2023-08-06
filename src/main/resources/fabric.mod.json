@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.sheb.filtertools.FilterToolsClient"
+		],
+		"modmenu": [
+			"com.sheb.filtertools.compat.ModMenuImpl"
 		]
 	},
 	"mixins": [
