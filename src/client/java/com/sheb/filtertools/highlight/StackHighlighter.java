@@ -46,7 +46,7 @@ abstract class StackHighlighter {
         MatrixStack stack = this.context.getMatrices();
 
         stack.push();
-        stack.translate(0, 0, 300);
+        stack.translate(0, 0, 201);
         context.drawTexture(this.icon.getTexture(), x, y, this.icon.getU(), this.icon.getV(), this.icon.getWidth(), this.icon.getHeight());
         stack.pop();
     }
