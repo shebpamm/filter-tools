@@ -15,7 +15,7 @@ public class FilterToolsConfigGui extends GuiConfigsBase {
     @Override
     public List<ConfigOptionWrapper> getConfigs() {
         List<? extends IConfigBase> configs;
-        configs = MaLiLibConfigs.Generic.OPTIONS;
+        configs = FilterToolsConfig.Generic.OPTIONS;
 
         return ConfigOptionWrapper.createFor(configs);
     }

@@ -8,6 +8,8 @@ import net.minecraft.util.Formatting;
 
 public class StackSizeHighlighter {
     public static void renderItemWarning(DrawContext context, Slot slot) {
+        if (!FilterToolsConfig.Generic.STACK_SIZE_WARNING.getBooleanValue()) return;
+
         TextColor color = TextColor.fromFormatting(Formatting.RED);
         int opacity = 128;
 

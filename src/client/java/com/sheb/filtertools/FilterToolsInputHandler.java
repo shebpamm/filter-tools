@@ -20,6 +20,7 @@ public class FilterToolsInputHandler implements IKeybindProvider {
     @Override
     public void addKeysToMap(IKeybindManager manager) {
         manager.addKeybindToMap(FilterToolsConfig.Generic.STACK_SIZE_WARNING.getKeybind());
+        manager.addKeybindToMap(FilterToolsConfig.Generic.OPEN_CONFIG_GUI.getKeybind());
     }
 
     @Override
