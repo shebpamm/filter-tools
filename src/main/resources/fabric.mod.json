@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "filter-tools",
+	"version": "${version}",
+	"name": "filter-tools",
+	"description": "Utilities for working with storage system filters",
+	"authors": [
+		"shebpamm"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/filter-tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.sheb.filtertools.FilterTools"
+		],
+		"client": [
+			"com.sheb.filtertools.FilterToolsClient"
+		]
+	},
+	"mixins": [
+		"filter-tools.mixins.json",
+		{
+			"config": "filter-tools.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
