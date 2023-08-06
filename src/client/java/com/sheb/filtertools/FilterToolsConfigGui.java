@@ -1,9 +1,7 @@
 package com.sheb.filtertools;
 
-import fi.dy.masa.malilib.MaLiLibConfigs;
 import fi.dy.masa.malilib.config.IConfigBase;
 import fi.dy.masa.malilib.gui.GuiConfigsBase;
-import net.minecraft.client.gui.screen.Screen;
 
 import java.util.List;
 

@@ -1,8 +1,6 @@
 package com.sheb.filtertools;
 
-import fi.dy.masa.malilib.MaLiLibConfigGui;
 import fi.dy.masa.malilib.config.ConfigManager;
-import fi.dy.masa.malilib.event.InitializationHandler;
 import fi.dy.masa.malilib.event.InputEventHandler;
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.hotkeys.IHotkeyCallback;
